@@ -33,6 +33,9 @@ class BirdBuilder {
     // do call new
     // name it "Build"
     public Bird build() {
+        if (type == null) {
+            type = "Finch";
+        }
         return new Bird(type, wingSpan);
     }
 }
